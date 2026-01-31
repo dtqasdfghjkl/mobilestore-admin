@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "mobilestore-4d9eb"
+  },
+  "targets": {
+    "mobilestore-4d9eb": {
+      "hosting": {
+        "admin": [
+          "admin-4d9eb"
+        ]
+      }
+    }
+  }
+}

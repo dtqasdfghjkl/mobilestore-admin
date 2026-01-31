@@ -1,0 +1,40 @@
+.newCategory {
+    flex: 4;
+    margin-left: 20px;
+}
+
+.newCategoryForm {
+    margin-top: 10px;
+}
+
+.newCategoryItem {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.newCategoryItem > label {
+    color: gray;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.newCategoryItem > input {
+    padding: 10px;
+}
+
+.newCategoryItem > select {
+    padding: 10px;
+}
+
+.newCategoryButton {
+    margin-top: 10px;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: darkblue;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}

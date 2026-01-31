@@ -1,0 +1,91 @@
+.transaction {
+    flex: 4;
+}
+.transactionDetail {
+    display: flex;
+}
+
+.transactionInfo {
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 0px 11px -1px #9d9696;
+}
+
+.transactionLeft {
+    flex: 3;
+}
+
+.transactionRight {
+    flex: 5;
+}
+
+.transactionCustomer {
+    display: flex;
+    align-items: center;
+}
+
+.transactionCustomerImg {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.transactionIcon {
+    font-size: 18px !important;
+    color: #6c6c6c;
+    margin-right: 5px;
+}
+
+.transactionInfoContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-50 {
+    min-width: 50%;
+}
+
+.transactionInfoItem {
+    display: flex;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.transactionInfoKey {
+    flex: 1;
+    font-weight: 600;
+}
+
+.transactionInfoValue {
+    flex: 3;
+    font-weight: 300;
+}
+
+.transactionInfoValue.boldValue {
+    font-weight: 700;
+}
+
+.transactionItem {
+    display: flex;
+    align-items: center;
+}
+
+.transactionImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.transactionDelete {
+    color: red;
+    margin-left: 10px;
+}
+
+.transactionUpdateSelect {
+    border: none;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
