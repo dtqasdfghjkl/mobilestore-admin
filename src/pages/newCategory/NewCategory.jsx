@@ -3,7 +3,7 @@ import "./newCategory.css"
 import { collection, addDoc } from "firebase/firestore"; 
 import {db, storage} from '../../fireConfig';
 import { ref, uploadBytes } from "firebase/storage";
-import { uploadImg } from '../../components/uploadImg';
+import { uploadImg, uploadImgCloud } from '../../components/uploadImg';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 
@@ -18,7 +18,7 @@ export default function NewCategory() {
          e.preventDefault();
       
         let url = "";
-        if(img != null) url = await uploadImg(img);
+        if(img != null) url = await uploadImgCloud(img);
         const data = {name, img: url, desc, active};
 
         console.log(data);

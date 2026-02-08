@@ -6,7 +6,7 @@ import { productData } from "../../data";
 import { Publish } from "@material-ui/icons";
 import { db } from "../../fireConfig";
 import { getDoc, doc, updateDoc, getDocs, collection } from "firebase/firestore";
-import { uploadImg } from "../../components/uploadImg";
+import { uploadImg, uploadImgCloud } from "../../components/uploadImg";
 import { toast } from "react-toastify";
 
 export default function Product() {
@@ -71,7 +71,7 @@ export default function Product() {
   const onUpdate = async (e) => {
     e.preventDefault();
     let imgURL = data.img;
-    if (fileImg != null) imgURL = await uploadImg(fileImg);
+    if (fileImg != null) imgURL = await uploadImgCloud(fileImg);
     await updateDoc(docref, {
       name: name,
       img: imgURL,

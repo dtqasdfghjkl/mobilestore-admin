@@ -5,7 +5,7 @@ import { Publish } from '@material-ui/icons'
 import { doc, getDoc, updateDoc } from 'firebase/firestore'
 import { db } from '../../fireConfig'
 import { async } from '@firebase/util'
-import { uploadImg } from '../../components/uploadImg'
+import { uploadImg, uploadImgCloud } from '../../components/uploadImg'
 import { toast } from 'react-toastify'
 export default function Category() {
     const [fileImg, setFileImg] = useState(null);
@@ -47,7 +47,7 @@ export default function Category() {
     const onUpdate = async(e) => {
         e.preventDefault();
         let imgURL = data.img;
-        if(fileImg != null) imgURL = await uploadImg(fileImg);
+        if(fileImg != null) imgURL = await uploadImgCloud(fileImg);
         await updateDoc(docref, {name: name, img: imgURL, desc, active});
         console.log("update success");
         toast.success("Update success!")
